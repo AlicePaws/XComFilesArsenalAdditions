@@ -98,18 +98,6 @@ manufacture:
     cost: 10000
     requiresBaseFunc: [WORKS]
     listOrder: 38910
-  - name: STR_TRACITE_ROCKET
-    category: STR_WEAPON
-    requires:
-      - STR_TRACITE
-      - STR_MAGMA_LAUNCHER
-    space: 2
-    time: 300
-    cost: 15000
-    requiresBaseFunc: [WORKS]
-    requiredItems:
-      STR_TRACITE: 2
-    listOrder: 38910
   - name: STR_VAR_TRACITE_CLIP
     category: STR_AMMUNITION
     requires:
@@ -117,7 +105,7 @@ manufacture:
       - STR_VAR_CANNON
     space: 6
     time: 130
-    cost: 6000
+    cost: 2000
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_TRACITE: 1
@@ -129,7 +117,7 @@ manufacture:
       - STR_VAR_CANNON
     space: 6
     time: 130
-    cost: 6000
+    cost: 2000
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 8     
@@ -162,7 +150,7 @@ manufacture:
       - STR_GAS_GRENADE_MANUFACTURING
     space: 3
     time: 90
-    cost: 2000
+    cost: 1000
     requiresBaseFunc: [WORKS]
     listOrder: 38431
   - name: STR_MORTAR_SHELL_GAS
@@ -172,7 +160,7 @@ manufacture:
       - STR_MORTAR_BUY
     space: 4
     time: 270
-    cost: 4000
+    cost: 3000
     requiresBaseFunc: [WORKS]
     listOrder: 38432
   - name: STR_MINI_MORTAR_SHELL_GAS
@@ -182,7 +170,7 @@ manufacture:
       - STR_MINI_MORTAR_BUY
     space: 4
     time: 90
-    cost: 2000
+    cost: 1000
     requiresBaseFunc: [WORKS]
     listOrder: 38433
   - name: STR_GARROTE_BRACELET
@@ -204,7 +192,7 @@ manufacture:
       - STR_MINI_MORTAR_BUY
     space: 4
     time: 270
-    cost: 6500
+    cost: 3000
     requiresBaseFunc: [WORKS]
     listOrder: 38433
   - name: STR_M16GL_ATTACH
@@ -890,17 +878,6 @@ manufacture:
     requiredItems:
       STR_DURATHREAD: 2
     listOrder: 16741
-  - name: STR_BLACKOPS_NIGHTVISION
-    category: STR_PERSONAL_ARMOR
-    requires:
-      - STR_ADVANCED_NIGHTOPS
-    space: 8
-    time: 1500
-    cost: 15000
-    requiresBaseFunc: [WORKS]
-    requiredItems:
-      STR_DURATHREAD: 4
-    listOrder: 16742
   - name: STR_BREAKDOWN_STR_PLASMA_GATLER_CLIP
     category: STR_COMPONENTS
     requires:
@@ -1521,7 +1498,6 @@ manufacture:
       - [10, {STR_SKS_SCOPED: 1, STR_SKS_CLIP_AP: 3}]
       - [30, {STR_MOSIN_RIFLE: 1, STR_BOLT_ACTION_CLIP: 3}]
       - [30, {STR_AKSU74: 1, STR_WP_5_45_CLIP: 3}]
-      - [30, {STR_RPK: 1, STR_RPK_CLIP: 3}]
       - [40, {STR_MAKAROV: 1, STR_MAKAROV_CLIP: 5}]
       - [30, {STR_MAKAROV: 1, STR_MAKAROV_BIG_CLIP: 3}]
       - [30, {STR_APS: 1, STR_MAKAROV_CLIP: 5}]
@@ -1756,13 +1732,11 @@ manufacture:
       - [10, {STR_AK47: 1, STR_WP_7_62_CLIP_AP: 3}]
       - [30, {STR_SNIPER_RIFLE: 1, STR_SNIPER_RIFLE_CLIP: 3}]
       - [30, {STR_PKM: 1, STR_PKM_CLIP: 3}]
-      - [35, {STR_RPK: 1, STR_RPK_DRUM: 3}]
       - [30, {STR_SWD: 1, STR_SWD_CLIP: 2}]
       - [40, {STR_AKSU74: 1, STR_WP_5_45_CLIP: 3}]
       - [40, {STR_GROZA: 1, STR_WP_7_62_CLIP: 3}]
       - [20, {STR_AKSU74: 1, STR_WP_5_45_CLIP_AP: 3}]
       - [20, {STR_GROZA: 1, STR_WP_7_62_CLIP_AP: 3}]
-      - [5, {STR_NSW: 1, STR_NSW_CLIP: 2}]
       - [4, {STR_BLACK_MARKET_TIER_3: 1}]
       - [3, {STR_BLACK_MARKET_TIER_4: 1}]
     listOrder: 62135
@@ -1887,10 +1861,6 @@ manufacture:
       # - [10, {STR_AUTO_SHOTGUN_SHELLS: 5}]
 # Rifles
       - [80, {STR_BOLT_ACTION_CLIP: 5}]
-      - [80, {STR_RPK_CLIP: 5}]
-      - [60, {STR_RPK_CLIP_AP: 5}]
-      - [60, {STR_RPK_DRUM: 5}]
-      - [40, {STR_RPK_DRUM_AP: 5}]
       - [80, {STR_WP_7_62_CLIP: 5}]
       - [80, {STR_WP_5_45_CLIP: 5}]
       - [60, {STR_WP_7_62_CLIP_AP: 5}]
@@ -2441,7 +2411,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 22561
-  - name: STR_EXALT_RIOT_SUIT_REPAIR
+  - name: STR_HEAVY_RIOT_SUIT_REPAIR
     category: STR_MAINTENANCE
     requires:
       - STR_EXALT_WAREHOUSE_RAIDED
@@ -2450,18 +2420,6 @@ manufacture:
     cost: 1000
     requiredItems:
       STR_EXALT_EXTERMINATOR_CORPSE: 1
-    producedItems:
-      STR_HEAVY_RIOT_SUIT: 1
-    listOrder: 220061
-  - name: STR_HEAVY_RIOT_SUIT_REPAIR
-    category: STR_MAINTENANCE
-    requires:
-      - STR_HEAVY_RIOT_SUIT_BUY
-    space: 2
-    time: 20
-    cost: 1000
-    requiredItems:
-      STR_HEAVY_RIOT_SUIT_CORPSE: 1
     producedItems:
       STR_HEAVY_RIOT_SUIT: 1
     listOrder: 220061
@@ -2507,22 +2465,6 @@ manufacture:
       - [33, {STR_HEAVY_TACTICAL_SUIT_PROTOTYPE: 1, STR_HEAVY_TACTICAL_SUIT_PROTOTYPE_SCHEMATICS: 1}]
     requiresBaseFunc: [WORKS]
     listOrder: 27010
-  - name: STR_REPAIR_PROTOTYPE_TACTICAL_SUIT
-    category: STR_MAINTENANCE
-    requires:
-      - STR_HEAVY_TACTICAL_SUIT_PROTOTYPE
-    space: 12
-    time: 200
-    cost: 5000
-    requiredItems:
-      STR_HEAVY_TACTICAL_SUIT_PROTOTYPE_RIGGED_CORPSE: 1
-      STR_DURATHREAD: 5
-    producedItems: {} # empty
-    randomProducedItems:
-      - [100, {}] # empty
-      - [10, {STR_HEAVY_TACTICAL_SUIT_PROTOTYPE: 1}]
-    requiresBaseFunc: [WORKS]
-    listOrder: 27010
   - name: STR_HEAVY_TACTICAL_SUIT_PROTOTYPE
     category: STR_PERSONAL_ARMOR
     requires:
@@ -2535,7 +2477,6 @@ manufacture:
     requiresBaseFunc: [WORKS]
     listOrder: 27011
   - name: STR_IMPACT_VEST
-    category: STR_PERSONAL_ARMOR
     requires:
       - STR_IMPACT_VEST_SCHEMATICS
     space: 10
@@ -3284,8 +3225,6 @@ manufacture:
       # - [10, {STR_PUMP_ACTION: 1, STR_PUMP_ACTION_SHELLS: 3}]
       # - [10, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
       - [20, {STR_GALIL: 1, STR_FN_FAL_CLIP: 3}]
-      - [20, {STR_GALIL_ARM: 1, STR_GALIL_ARM_CLIP: 3}]
-      - [5, {STR_GALIL_ARM: 1, STR_GALIL_ARM_BIG_CLIP: 3}]
       # - [20, {STR_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
       - [20, {STR_M14: 1, STR_FN_FAL_CLIP: 3}]
       - [30, {STR_DOUBLE_BARRELED: 1, STR_DOUBLE_BARRELED_BUCKSHOT: 8}]
@@ -3384,8 +3323,6 @@ manufacture:
       - [20, {STR_FAMAS: 1, STR_RIFLE_M16_CLIP: 3}]
       - [20, {STR_GALIL: 1, STR_FN_FAL_CLIP: 3}]
       - [10, {STR_GALIL: 1, STR_FN_FAL_CLIP_AP: 3}]
-      - [20, {STR_GALIL_ARM: 1, STR_GALIL_ARM_BIG_CLIP: 3}]
-      - [5, {STR_GALIL_ARM: 1, STR_GALIL_ARM_BIG_CLIP_AP: 3}]
       - [20, {STR_FN_FAL: 1, STR_FN_FAL_CLIP: 3}]
       - [10, {STR_FN_FAL: 1, STR_FN_FAL_CLIP_AP: 3}]
       - [15, {STR_FN_FAL_SCOPED: 1, STR_FN_FAL_CLIP: 3}]
@@ -3444,10 +3381,6 @@ manufacture:
       - [80, {STR_WP_7_62_CLIP: 5}]
       - [60, {STR_WP_7_62_CLIP_AP: 5}]
       - [60, {STR_NITRO_EXPRESS_CLIP: 12}]
-      - [60, {STR_GALIL_ARM_CLIP: 5}]
-      - [40, {STR_GALIL_ARM_CLIP_AP: 5}]
-      - [40, {STR_GALIL_ARM_CLIP_AP: 5}]
-      - [20, {STR_GALIL_ARM_BIG_CLIP_AP: 5}]
       - [60, {STR_FN_FAL_CLIP: 5}]
       - [40, {STR_FN_FAL_CLIP_AP: 5}]
       # - [30, {STR_G11_CLIP: 5}]

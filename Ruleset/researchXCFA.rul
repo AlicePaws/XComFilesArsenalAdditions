@@ -1,181 +1,4 @@
 research:
-  - name: STR_GALIL_ARM_BIG_CLIP_AP_PREQ
-    cost: 0
-    points: 0
-    unlocks: 
-      - STR_GALIL_ARM_CLIP_AP_PREQ
-    dependencies:
-      - STR_TROLLIUM
-  - name: STR_GALIL_ARM_BIG_CLIP_AP
-    cost: 0
-    points: 0
-    needItem: true
-    unlocks:
-      - STR_AP_CLIPS
-  - name: STR_GALIL_ARM_BIG_CLIP_AP_BUY
-    cost: 1
-    lookup: STR_GALIL_ARM
-    points: 0
-    dependencies:
-      - STR_MILESTONE_2_SUMMARY
-      - STR_GALIL_ARM_BIG_CLIP_BUY
-      - STR_GALIL_ARM_BIG_CLIP_AP_PREQ
-  - name: STR_GALIL_ARM_CLIP_AP_PREQ
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_TROLLIUM
-  - name: STR_GALIL_ARM_CLIP_AP
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_GALIL_ARM
-    needItem: true
-    unlocks:
-      - STR_AP_CLIPS
-  - name: STR_GALIL_ARM_CLIP_AP_BUY
-    cost: 1
-    lookup: STR_GALIL_ARM
-    points: 0
-    dependencies:
-      - STR_MILESTONE_2_SUMMARY
-      - STR_GALIL_ARM
-      - STR_GALIL_ARM_CLIP_AP_PREQ
-  - name: STR_RPK_DRUM_AP_PREQ
-    cost: 0
-    points: 0
-    unlocks: 
-      - STR_RPK_CLIP_AP_PREQ
-    dependencies:
-      - STR_TROLLIUM
-  - name: STR_RPK_DRUM_AP
-    cost: 0
-    points: 0
-    needItem: true
-    unlocks:
-      - STR_AP_CLIPS
-  - name: STR_RPK_DRUM_AP_BUY
-    cost: 1
-    lookup: STR_RPK
-    points: 0
-    dependencies:
-      - STR_MILESTONE_2_SUMMARY
-      - STR_RPK_DRUM_BUY
-      - STR_RPK_DRUM_AP_PREQ
-  - name: STR_RPK_CLIP_AP_PREQ
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_TROLLIUM
-  - name: STR_RPK_CLIP_AP
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_RPK
-    needItem: true
-    unlocks:
-      - STR_AP_CLIPS
-  - name: STR_RPK_CLIP_AP_BUY
-    cost: 1
-    lookup: STR_RPK
-    points: 0
-    dependencies:
-      - STR_MILESTONE_2_SUMMARY
-      - STR_RPK
-      - STR_RPK_CLIP_AP_PREQ
-  - name: STR_GALIL_ARM_BIG_CLIP
-    cost: 0
-    points: 0
-    lookup: STR_GALIL_ARM
-    needItem: true
-    listOrder: 21200
-  - name: STR_RPK_DRUM
-    cost: 0
-    points: 0
-    lookup: STR_RPK
-    needItem: true
-    listOrder: 21200
-  - name: STR_RPK_DRUM_BUY
-    cost: 10
-    points: 10
-    lookup: STR_RPK
-    dependencies:
-      - STR_ANY_CULT_HQ
-      - STR_RPK_BUY
-    listOrder: 21200
-  - name: STR_GALIL_ARM_BIG_CLIP_BUY
-    cost: 10
-    points: 10
-    lookup: STR_GALIL_ARM
-    dependencies:
-      - STR_ANY_CULT_HQ
-      - STR_GALIL_ARM_BUY
-    listOrder: 21200
-  - name: STR_GALIL_ARM
-    cost: 5
-    points: 10
-    needItem: true
-    unlocks:
-      - STR_RIFLE_M16_CLIP
-    listOrder: 21200
-  - name: STR_GALIL_ARM_BUY
-    cost: 2
-    points: 1
-    lookup: STR_GALIL_ARM
-    unlocks:
-      - STR_RIFLE_M16_CLIP
-    dependencies:
-      - STR_GALIL_ARM_BUY_PREQ_A
-      - STR_GALIL_ARM_BUY_PREQ_B
-    listOrder: 421200
-  - name: STR_GALIL_ARM_BUY_PREQ_A
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_BUY_CHURCH_OF_DAGON_WEAPONS
-    unlocks:
-      - STR_GALIL_ARM_BUY
-  - name: STR_GALIL_ARM_BUY_PREQ_B
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_MILESTONE_2_SUMMARY
-      - STR_GALIL_ARM
-    unlocks:
-      - STR_GALIL_ARM_BUY
-  - name: STR_RPK
-    cost: 5
-    points: 10
-    needItem: true
-    unlocks:
-      - STR_WP_7_62_CLIP
-    listOrder: 21125
-  - name: STR_RPK_BUY
-    cost: 2
-    points: 1
-    lookup: STR_RPK
-    unlocks:
-      - STR_WP_7_62_CLIP
-      - STR_WP_7_62_CLIP_BUY
-    dependencies:
-      - STR_RPK_BUY_PREQ_A
-      - STR_RPK_BUY_PREQ_B
-    listOrder: 421125
-  - name: STR_RPK_BUY_PREQ_A
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_BUY_ZSRR_WEAPONS
-    unlocks:
-      - STR_RPK_BUY
-  - name: STR_RPK_BUY_PREQ_B
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_MILESTONE_2_SUMMARY
-      - STR_RPK
-    unlocks:
-      - STR_RPK_BUY
   - name: STR_COLT45_AP_CLIP_PREQ
     cost: 0
     points: 0
@@ -344,11 +167,6 @@ research:
     points: 0
     dependencies:
       - STR_TROLLIUM
-  - name: STR_LAUNCHER_BREACHING
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_BREACHING_CLIPS
   - name: STR_FLECHETTE_CLIPS
     cost: 0
     points: 0
@@ -704,20 +522,19 @@ research:
     points: 0
     dependencies:
       - STR_BLACKOPS_SMART_AUTO_SHOTGUN
-      - STR_ALLOY_AMMO
-      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_BS
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_AA_SHELLS_FLAK_PREQ
   - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_BS_PREQ
     cost: 0
     points: 0
     dependencies:
       - STR_BLACKOPS_SMART_AUTO_SHOTGUN
-      - STR_ALLOY_AMMO
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_BS_PREQ
   - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_SLUGS_PREQ
     cost: 0
     points: 0
     dependencies:
       - STR_BLACKOPS_SMART_AUTO_SHOTGUN
-      - STR_ALLOY_AMMO
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_SLUGS_PREQ
   - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_AA_SHELLS_FLAK
     cost: 0
     points: 0
@@ -1900,7 +1717,7 @@ research:
   - name: STR_BLACKOPS_SCOPED_REVOLVER_BUY
     cost: 5
     points: 3
-    lookup: STR_BLACKOPS_PRECISION_REVOLVER
+    lookup: STR_BLACKOPS_SCOPED_REVOLVER
     dependencies:
       - STR_BLACKOPS_PRECISION_REVOLVER
       - STR_BLACKOPS_PREMIUM
@@ -2557,9 +2374,7 @@ research:
       - STR_USAS_12_DRAGONBREATH_DRUM_PREQ
       - STR_AUTO_SHOTGUN_FRAG_SHELLS_PREQ
       - STR_RIFLE_M16_CLIP_AP_PREQ
-      - STR_GALIL_ARM_CLIP_AP_PREQ
       - STR_WP_7_62_CLIP_AP_PREQ
-      - STR_RPK_CLIP_AP_PREQ
       - STR_WP_5_45_CLIP_AP_PREQ
       - STR_NTW20_DENEL_HE_CLIP_PREQ
       - STR_MODEL_SS41_HE_CLIP_PREQ
@@ -2574,8 +2389,6 @@ research:
     unlocks:
       - STR_EXOTIC_AMMUNITION
     getOneFree:
-      - STR_RPK_DRUM_AP_PREQ
-      - STR_GALIL_ARM_BIG_CLIP_AP_PREQ
       - STR_PANCOR_JACKHAMMER_DRAGONBREATH_CLIP_PREQ
       - STR_CAWS_CLIP_FRAG_PREQ
       - STR_CAWS_CLIP_DRAGONBREATH_PREQ
@@ -2600,8 +2413,6 @@ research:
       - STR_M3_CARL_GUSTAV
       - STR_RT20
       - STR_MODEL_SS41
-      - STR_RPK
-      - STR_GALIL_ARM
     getOneFreeProtected: !add
       STR_PTRD41:
         - STR_PTRS41
@@ -2637,7 +2448,6 @@ research:
       - STR_PTRD41
       - STR_AN94_RIFLE
       - STR_LIGHT_HAND_CANNON
-      - STR_RPK
     getOneFreeProtected:
       STR_PTRD41:
         - STR_PTRS41
@@ -2659,7 +2469,6 @@ research:
       - STR_FAMAS
       - STR_FN_FAL
       - STR_GALIL
-      - STR_GALIL_ARM
       - STR_M14
       - STR_RT20
       - STR_SAWED_OFF
@@ -2772,13 +2581,11 @@ research:
   - name: STR_ZSRR_MATROS
     getOneFree: !add
       - STR_APS
-      - STR_RPK
       - STR_PTRD41
       - STR_AN94_RIFLE
   - name: STR_ZSRR_RED_OPS_MALE
     getOneFree: !add
       - STR_APS
-      - STR_RPK
       - STR_MAUSER
       - STR_PTRD41
       - STR_AN94_RIFLE
@@ -2792,7 +2599,6 @@ research:
   - name: STR_ZSRR_RED_OPS_FEMALE
     getOneFree: !add
       - STR_APS
-      - STR_RPK
       - STR_MAUSER
       - STR_PTRD41
       - STR_AN94_RIFLE
@@ -2806,7 +2612,6 @@ research:
   - name: STR_ZSRR_PIONEER_MALE
     getOneFree: !add
       - STR_APS
-      - STR_RPK
       - STR_PTRD41
       - STR_AN94_RIFLE
     getOneFreeProtected: !add
@@ -2817,7 +2622,6 @@ research:
   - name: STR_ZSRR_PIONEER_FEMALE
     getOneFree: !add
       - STR_APS
-      - STR_RPK
       - STR_PTRD41
       - STR_AN94_RIFLE
     getOneFreeProtected: !add
@@ -2828,7 +2632,6 @@ research:
   - name: STR_ZSRR_UBEK
     getOneFree: !add
       - STR_APS
-      - STR_RPK
       - STR_PTRD41
       - STR_AN94_RIFLE
     getOneFreeProtected: !add
@@ -2841,10 +2644,6 @@ research:
   - name: STR_BLACK_LOTUS_FOOTMAN
     getOneFree: !add
       - STR_MAUSER_AUTO
-  - name: STR_MALE_ELITE_SOLDIER
-    getOneFree: !add
-      - STR_RPK
-      - STR_GALIL_ARM
   - name: STR_BLACK_LOTUS_KNIGHT
     requiresBaseFunc: [INTLAB]
     cost: 20
@@ -2954,13 +2753,8 @@ research:
       - STR_HK51
       - STR_MODEL_SS41
       - STR_MAUSER_AUTO
-  - name: STR_PRIEST_OF_DAGON
-    getOneFreeProtected: !add
-      STR_GALIL:
-        - STR_GALIL_ARM
   - name: STR_CHOSEN_OF_DAGON
     getOneFree: !add
-      - STR_GALIL_ARM
       - STR_M3_CARL_GUSTAV
       - STR_STURMPISTOLE
       - STR_FG42
@@ -2968,8 +2762,6 @@ research:
     getOneFreeProtected: !add
       STR_FN_FAL:
         - STR_FN_FAL_SCOPED
-      STR_GALIL:
-        - STR_GALIL_ARM
   - name: STR_SORCERER_OF_DAGON
     getOneFree: !add
       - STR_M3_CARL_GUSTAV
@@ -2981,8 +2773,6 @@ research:
     getOneFreeProtected: !add
       STR_FN_FAL:
         - STR_FN_FAL_SCOPED
-      STR_GALIL:
-        - STR_GALIL_ARM
   - name: STR_ALIEN_DATA_QUANTUM_SLATE #instead have Alien Weapon Data Slates for guns or specific slates for specific rewards?
     cost: 100
     points: 25
@@ -3269,11 +3059,6 @@ research:
     points: 0
     dependencies:
       - STR_ZSRR_UBEK_PROTOTYPE_SUIT
-  - name: STR_ZSRR_RED_OPS_ELITE_ARMOR
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_ZSRR_RED_OPS_ELITE
 #Black Lotus Convoys
   - name: STR_BLACK_LOTUS_KNIGHT_ARMOR
     cost: 0
@@ -3290,11 +3075,6 @@ research:
     points: 0
     dependencies:
       - STR_BLACK_LOTUS_TORONJIN
-  - name: STR_BLACK_LOTUS_ELITE_FOOTMAN_ARMOR
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_BLACK_LOTUS_ELITE_FOOTMAN
 #GIVE CONVOYS(GENERAL AND THEIR SIZE SPECIFIC ENTRIES TOO) A UFOPEDIA ARTICLE, AS WELL AS THEIR TERMINATION ENTRIES
 #EXALT Convoys
   - name: STR_EXALT_LOGISTICS_ARMOR
@@ -3312,11 +3092,6 @@ research:
     points: 0
     dependencies:
       - STR_EXALT_EXTERMINATOR
-  - name: STR_EXALT_ELITE_REINFORCER_ARMOR
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_EXALT_ELITE_REINFORCER
   - name: STR_EXALT_CONVOYS
     cost: 0
     points: 5
@@ -3358,6 +3133,7 @@ research:
     points: 15
     dependencies:
       - STR_EXALT_REINFORCER
+      - STR_EXALT_HQ
     listOrder: 300397
   - name: STR_EXALT_WAREHOUSE
     cost: 0
@@ -3546,6 +3322,7 @@ research:
     points: 15
     dependencies:
       - STR_ZSRR_RED_OPS_OFFICER
+      - STR_ZSRR_HQ
     listOrder: 300397
   - name: STR_ZSRR_WAREHOUSE
     cost: 0
@@ -3685,7 +3462,6 @@ research:
       - STR_APS
       - STR_RAK
       - STR_AKSU74
-      - STR_RPK
       - STR_SKS
       - STR_MOSIN_RIFLE
       - STR_PIPE
@@ -3717,7 +3493,6 @@ research:
       - STR_RAK
       - STR_APS
       - STR_SWD
-      - STR_RPK
       - STR_PKM
       - STR_SKS
       - STR_SNIPER_RIFLE
@@ -3757,7 +3532,6 @@ research:
       - STR_RAK
       - STR_APS
       - STR_SWD
-      - STR_RPK
       - STR_PKM
       - STR_SKS
       - STR_SNIPER_RIFLE
@@ -3779,7 +3553,7 @@ research:
     cost: 35
     points: 100
     needItem: true
-    spawnedItem: STR_HEAVY_TACTICAL_SUIT_PROTOTYPE_SCHEMATICS
+    spawnedItem: STR_WEAPON_BOX_REINFORCED_ZSRR
     unlocks:
       - STR_HEAVY_TACTICAL_SUIT_PROTOTYPE
       - STR_ZSRR_HQ
@@ -3799,11 +3573,6 @@ research:
     points: 0
     dependencies:
       - STR_HAND_OF_DAGON
-  - name: STR_PROPHET_OF_DAGON_ARMOR
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_PROPHET_OF_DAGON
   - name: STR_CHURCH_OF_DAGON_CONVOYS
     cost: 0
     points: 5
@@ -3845,6 +3614,7 @@ research:
     points: 15
     dependencies:
       - STR_PROSELYTE_OF_DAGON
+      - STR_CHURCH_OF_DAGON_HQ
     listOrder: 300397
   - name: STR_CHURCH_OF_DAGON_WAREHOUSE
     cost: 0
@@ -3895,8 +3665,6 @@ research:
     getOneFreeProtected:
       STR_FN_FAL:
         - STR_FN_FAL_SCOPED
-      STR_GALIL:
-        - STR_GALIL_ARM
     listOrder: 150222
   - name: STR_PROSELYTE_OF_DAGON
     requiresBaseFunc: [INTLAB]
@@ -3924,8 +3692,6 @@ research:
     getOneFreeProtected:
       STR_FN_FAL:
         - STR_FN_FAL_SCOPED
-      STR_GALIL:
-        - STR_GALIL_ARM
       STR_ACOLYTE_OF_DAGON:
         - STR_MANURHIN_SCOPED_REVOLVER
       STR_PROSELYTE_OF_DAGON:
@@ -3959,8 +3725,6 @@ research:
     getOneFreeProtected:
       STR_FN_FAL:
         - STR_FN_FAL_SCOPED
-      STR_GALIL:
-        - STR_GALIL_ARM
       STR_ACOLYTE_OF_DAGON:
         - STR_MANURHIN_SCOPED_REVOLVER
       STR_PROSELYTE_OF_DAGON:
@@ -4145,6 +3909,7 @@ research:
     points: 15
     dependencies:
       - STR_BLACK_LOTUS_ARCHWITCH
+      - STR_BLACK_LOTUS_HQ
     listOrder: 300397
   - name: STR_BLACK_LOTUS_WAREHOUSE
     cost: 0

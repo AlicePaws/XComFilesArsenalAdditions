@@ -131,20 +131,6 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Armors_Compilation/Riot_Vest/RiotArmor_H.png
-  - type: XCOM_71.PCK
-    width: 512
-    height: 720
-    subX: 32
-    subY: 40
-    files:
-      0: Resources/Armors_Compilation/BlackOps_NightVisionGear/BLACKOPS_NIGHTGEAR.png
-  - type: XCOM_72.PCK
-    width: 512
-    height: 720
-    subX: 32
-    subY: 40
-    files:
-      0: Resources/Armors_Compilation/BlackOps_NightVisionGear/BLACKOPS_NIGHTGEAR_H.png
   - type: XCOM_73.PCK
     width: 512
     height: 720
@@ -163,10 +149,6 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Armors_Compilation/HeavyRiotSuit/Inventory/inventory_HeavyRiotSuit.png
-  - type: MAN_71.SPK
-    singleImage: true
-    files:
-      0: Resources/Armors_Compilation/BlackOps_NightVisionGear/BlackOps_Gear.png
   - type: XCOM_69.PCK
     width: 256
     height: 1440
@@ -512,28 +494,20 @@ extraSprites:
       562: Resources/Weapons_Compilation/ClassicWeapons/bigob_Colt45APClip.png
       563: Resources/Weapons_Compilation/ClassicWeapons/bigob_HKMK23SOCOMHPClip.png
       564: Resources/Weapons_Compilation/ClassicWeapons/bigob_HKMK23SOCOMAPClip.png
-      565: Resources/Weapons_Compilation/ClassicWeapons/bigob_Galil_Arm.png
-      566: Resources/Weapons_Compilation/ClassicWeapons/bigob_RPK.png
-      567: Resources/Weapons_Compilation/ClassicWeapons/bigob_GalilArmClip.png
-      568: Resources/Weapons_Compilation/ClassicWeapons/bigob_GalilArmClipBig.png
-      569: Resources/Weapons_Compilation/ClassicWeapons/bigob_GalilArmClipAP.png
-      570: Resources/Weapons_Compilation/ClassicWeapons/bigob_GalilArmClipBigAP.png
-      571: Resources/Weapons_Compilation/ClassicWeapons/bigob_RPK_Clip.png
-      572: Resources/Weapons_Compilation/ClassicWeapons/bigob_RPK_Drum.png
-      573: Resources/Weapons_Compilation/ClassicWeapons/bigob_RPK_ClipAP.png
-      574: Resources/Weapons_Compilation/ClassicWeapons/bigob_RPK_DrumAP.png
-      575: Resources/Weapons_Compilation/ClassicWeapons/bigob_RPKdrum.png
-      576: Resources/Weapons_Compilation/ClassicWeapons/bigob_RPKempty.png
-      577: Resources/Weapons_Compilation/ClassicWeapons/bigob_RPKgeneric.png
-      578: Resources/Weapons_Compilation/TraciteWeapons/bigob_Shard1T.png
-      579: Resources/Weapons_Compilation/ArmorWeapons/bigob_RiotCombatShieldPRIMED.png
-      580: Resources/Weapons_Compilation/ArmorWeapons/bigob_RiotCombatShieldBROKEN.png
-      581: Resources/Weapons_Compilation/ArmorWeapons/bigob_XenoCombatShieldPRIMED.png
-      582: Resources/Weapons_Compilation/ArmorWeapons/bigob_XenoAlloyShieldPRIMED.png
-      583: Resources/Weapons_Compilation/ArmorWeapons/bigob_AssaultShieldPRIMED.png
-      584: Resources/Weapons_Compilation/ArmorWeapons/bigob_AssaultShieldBROKEN.png
-      585: Resources/Weapons_Compilation/ArmorWeapons/bigob_StormtrooperShieldPRIMED.png
-      586: Resources/Weapons_Compilation/ArmorWeapons/bigob_StormtrooperShieldBROKEN.png
+      565: Resources/Weapons_Compilation/NaniteWeapons/bigob_NanoRifleExperimental1.png
+      566: Resources/Weapons_Compilation/NaniteWeapons/bigob_NanoRifleClip.png
+      567: Resources/Weapons_Compilation/NaturalWeapons/bigob_ScorpionSting.png
+      568: Resources/Weapons_Compilation/NaturalWeapons/bigob_GreenBlob.png
+      569: Resources/Weapons_Compilation/NaturalWeapons/bigob_BlueBlob.png
+      570: Resources/Weapons_Compilation/NaturalWeapons/bigob_PurpleBlob.png
+      571: Resources/Weapons_Compilation/NaturalWeapons/bigob_RedBlob.png
+      572: Resources/Weapons_Compilation/NaturalWeapons/bigob_SilacoidBite.png
+      573: Resources/Weapons_Compilation/NaturalWeapons/bigob_ReaperAttack.png
+      574: Resources/Weapons_Compilation/NaturalWeapons/bigob_ChryssalidClaws.png
+      575: Resources/Weapons_Compilation/NaturalWeapons/bigob_ZombieAttack.png
+      576: Resources/Races_Compilation/ChryssalidRace/bigob_AlienEgg.png
+      577: Resources/Races_Compilation/ChryssalidRace/bigob_BadassAlienEgg.png
+      578: Resources/Races_Compilation/ChryssalidRace/bigob_CHRYSSALID_LARVA_CORPSE.png
 #Weapon overhaul
       500: Resources/Weapon_Overhaul/bigob_Calico_2.png
       501: Resources/Weapon_Overhaul/bigob_CalicoClip_2.png
@@ -549,7 +523,6 @@ extraSprites:
       511: Resources/Weapon_Overhaul/bigob_AK47_Clip_AP3.png
       512: Resources/Weapon_Overhaul/bigob_AKM_Clip_AP2.png    # This is actually the AKSU74 clip.
       513: Resources/Weapon_Overhaul/bigob_M16Clip_AP2.png
-      515: Resources/Tanks_Compilation/TankWeapons/bigob_TaserCannonClipTank2.png
   - type: HANDOB.PCK
     height: 40
     width: 256
@@ -635,16 +608,7 @@ extraSprites:
       2704: Resources/Weapons_Compilation/ClassicWeapons/handob_VKS.png
       2712: Resources/Weapons_Compilation/ClassicWeapons/handob_SKS_SCOPED.png
       2720: Resources/Weapons_Compilation/ClassicWeapons/handob_M16Beowulf.png
-      2728: Resources/Weapons_Compilation/ClassicWeapons/handob_Galil_Arm.png
-      2736: Resources/Weapons_Compilation/ClassicWeapons/handob_RPK.png
-      2744: Resources/Weapons_Compilation/ClassicWeapons/handob_RPKdrum.png
-      2752: Resources/Weapons_Compilation/ClassicWeapons/handob_RPKempty.png
-      2760: Resources/Weapons_Compilation/ArmorWeapons/handob_RiotCombatShieldPRIMED.png
-      2768: Resources/Weapons_Compilation/ArmorWeapons/handob_RiotCombatShieldBROKEN.png
-      2776: Resources/Weapons_Compilation/ArmorWeapons/handob_XenoCombatShieldPRIMED.png
-      2784: Resources/Weapons_Compilation/ArmorWeapons/handob_XenoAlloyShieldPRIMED.png
-      2792: Resources/Weapons_Compilation/ArmorWeapons/handob_AssaultShieldPRIMED.png
-      2800: Resources/Weapons_Compilation/ArmorWeapons/handob_StormtrooperShieldPRIMED.png
+      2728: Resources/Weapons_Compilation/NaniteWeapons/handob_NanoRifle.png
   - type: FLOOROB.PCK
     files:
       100: Resources/Invisible/floorob_invisible.png
@@ -769,11 +733,22 @@ extraSprites:
       439: Resources/Weapons_Compilation/ClassicWeapons/floorob_M16Beowulf.png
       440: Resources/Weapons_Compilation/ClassicWeapons/floorob_SKS_SCOPED.png
       441: Resources/Weapons_Compilation/BlackOpsWeapons/floorob_AssaultCannonClip.png
-      442: Resources/Weapons_Compilation/ClassicWeapons/floorob_Galil_Arm.png
-      443: Resources/Weapons_Compilation/ClassicWeapons/floorob_RPK.png
-      444: Resources/Weapons_Compilation/ClassicWeapons/floorob_RPKdrum.png
-      445: Resources/Weapons_Compilation/ClassicWeapons/floorob_RPKempty.png
-      446: Resources/Weapons_Compilation/ArmorWeapons/floorob_RiotCombatShieldBROKEN.png
+      442: Resources/Races_Compilation/ChryssalidRace/floorob_EGG_SAC_1.png
+      443: Resources/Races_Compilation/ChryssalidRace/floorob_EGG_SAC_2.png
+      444: Resources/Races_Compilation/ChryssalidRace/floorob_EGG_SAC_3.png
+      445: Resources/Races_Compilation/ChryssalidRace/floorob_EGG_SAC_4.png
+      446: Resources/Races_Compilation/SyntheticRace/floorob_NANITE_GOO_1.png
+      447: Resources/Races_Compilation/SyntheticRace/floorob_NANITE_GOO_2.png
+      448: Resources/Races_Compilation/SyntheticRace/floorob_NANITE_GOO_3.png
+      449: Resources/Races_Compilation/SyntheticRace/floorob_NANITE_GOO_4.png
+      450: Resources/Weapons_Compilation/NaniteWeapons/floorob_NanoRifle.png
+      451: Resources/Weapons_Compilation/NaniteWeapons/floorob_NanoRifleClip.png
+      452: Resources/Races_Compilation/ChryssalidRace/floorob_BADASS_CHRYSSALID_c1.png
+      453: Resources/Races_Compilation/ChryssalidRace/floorob_BADASS_CHRYSSALID_c2.png
+      454: Resources/Races_Compilation/ChryssalidRace/floorob_BADASS_CHRYSSALID_c3.png
+      455: Resources/Races_Compilation/ChryssalidRace/floorob_AlienEgg.png
+      456: Resources/Races_Compilation/ChryssalidRace/floorob_BadassAlienEgg.png
+      457: Resources/Races_Compilation/ChryssalidRace/floorob_CHRYSSALID_LARVA_CORPSE.png
 #Weapon Overhaul
       400: Resources/Weapon_Overhaul/floorob_Calico_2.png
       401: Resources/Weapon_Overhaul/floorob_Mac10.png    # Already in the mod. Somehow this was not used.
@@ -804,7 +779,6 @@ extraSprites:
       401: Resources/Weapons_Compilation/HitAnimations/Taser_hit.png
       411: Resources/Weapons_Compilation/HitAnimations/OrangeSkull_hit.png
       421: Resources/Weapons_Compilation/HitAnimations/Light_hit.png
-      431: Resources/Weapons_Compilation/HitAnimations/GreenTaser_hit.png
   - type: X1.PCK #Explosive type damage uses this (smoke, incendiary, stun, & High Explosive)
     width: 1024
     height: 64
@@ -828,8 +802,11 @@ extraSprites:
       272: Resources/Weapons_Compilation/ExplosionAnimations/Flame_Skull2Outline2.png
       280: Resources/Weapons_Compilation/ExplosionAnimations/Cyan_Skull_exp.png
       288: Resources/Weapons_Compilation/ExplosionAnimations/Yellow_Skull_exp.png
-      296: Resources/Weapons_Compilation/ExplosionAnimations/GreenEMP_ExplosionDense.png
-      304: Resources/Weapons_Compilation/ExplosionAnimations/GreenEMP_Explosion.png
+      296: Resources/Weapons_Compilation/ExplosionAnimations/Green_Skull_exp.png
+      304: Resources/Weapons_Compilation/ExplosionAnimations/Hellish_Skull_exp.png
+      312: Resources/Weapons_Compilation/ExplosionAnimations/Hellish_Skull_Partial_exp.png
+      320: Resources/Weapons_Compilation/ExplosionAnimations/Hellish_Red_Skull_exp.png
+      328: Resources/Weapons_Compilation/ExplosionAnimations/Hellish_Red_Skull_Partial_exp.png
   - type: Projectiles
     height: 3
     width: 65
@@ -3476,24 +3453,10 @@ extraSprites:
     fileSingle: Resources/Armors_Compilation/Riot_Vest/Inventory/RiotVest.png
   - typeSingle: HYBRID_AGENT__8__RIOT_VEST
     fileSingle: Resources/Armors_Compilation/Riot_Vest/Inventory/RiotVest.png
-# BlackOps NightVision Gear
-  - typeSingle: HUMAN_AGENT__8__BLACKOPS_GEAR
-    fileSingle: Resources/Armors_Compilation/BlackOps_NightVisionGear/BlackOps_Gear.png
 #  - typeSingle: HUMAN_AGENT__7__BULLETPROOF_COAT_M_BIG
 #    fileSingle: Resources/Armors_Compilation/BulletproofCoat/Inventory/BulletproofCoat_M_big.png
-#  - typeSingle: HUMAN_AGENT__7__BULLETPROOF_COAT_F
-#    fileSingle: Resources/Armors_Compilation/BlackOps_NightVisionGear/BlackOps_Gear.png
 #  - typeSingle: HUMAN_AGENT__7__BULLETPROOF_COAT_F_BUSTY
 #    fileSingle: Resources/Armors_Compilation/BulletproofCoat/Inventory/BulletproofCoat_F_busty.png
-  - typeSingle: HYBRID_AGENT__8__BLACKOPS_GEAR
-    fileSingle: Resources/Armors_Compilation/BlackOps_NightVisionGear/BlackOps_Gear.png
-#  - typeSingle: HYBRID_AGENT__7__BULLETPROOF_COAT_F
-#    fileSingle: Resources/Armors_Compilation/BlackOps_NightVisionGear/BlackOps_Gear.png
-# BlackOps NightVision Googles
-  - typeSingle: HUMAN_AGENT__14__BLACKOPS_NIGHTVISION_GOOGLES
-    fileSingle: Resources/Armors_Compilation/BlackOps_NightVisionGear/Inventory/gear_011.png
-  - typeSingle: HUMAN_AGENT__14__BLACKOPS_NIGHTVISION_GOOGLES_WIDE
-    fileSingle: Resources/Armors_Compilation/BlackOps_NightVisionGear/Inventory/gear_011.png
 # Riot Vest Helmet (Fix the wide sprite lol)
   - typeSingle: HUMAN_AGENT__14__RIOT_HELMET
     fileSingle: Resources/Armors_Compilation/Riot_Vest/Inventory/RiotHelmet.png

@@ -934,4 +934,5 @@ Commented out armors crashing on boot
 Replaced bad transparency on backgrounds thanks to gchpaco
 0.8.1g
 Made Heavy Riot Suit's repairable without needing the EXALT Warehouse mission to do so
-Added NSV Machine Gun to Reinforced Red Dawn Boxes 
+Added NSV Machine Gun to Reinforced Red Dawn Boxes
+Removed Tactical Ops Suit armor (redundant)

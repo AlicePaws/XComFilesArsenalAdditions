@@ -1,293 +1,103 @@
 items:
-  - type: STR_RPK
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_LAND]
-    requiresBuy:
-      - STR_RPK_BUY
-    size: 0.2
-    costBuy: 3100
-    costSell: 1950
-    weight: 12
-    bigSprite: 566
-    floorSprite: 443
-    handSprite: 2736
-    bulletSprite: 2
-    fireSound: [166,167,168,169,170]
-    reloadSound: 217
-    compatibleAmmo:
-      - STR_WP_7_62_CLIP
-      - STR_RPK_CLIP
-      - STR_RPK_DRUM
-      - STR_WP_7_62_CLIP_AP
-      - STR_RPK_CLIP_AP
-      - STR_RPK_DRUM_AP
-    accuracyCloseQuarters: 85
-    accuracyAuto: 25 #35
-    accuracySnap: 55 #65
-    accuracyAimed: 90 #105
-    tuAuto: 49
-    tuSnap: 37
-    tuAimed: 60 #70
-    autoRange: 18 #11
-    snapRange: 19 #16
-    kneelBonus: 125
-    autoShots: 5
-    confSnap:
-      shots: 2
-    sprayWaypoints: 2
+  - type: STR_METALLOID_BOMB
+    categories: [STR_DIMENSION_X_TECH, STR_GRENADES, STR_CHEMICALS, STR_CONCEALABLE, STR_LAND]
+    size: 0.1
+    costSell: 120000
+    weight: 80
+    bigSprite: 367
+    floorSprite: 371
+    bulletSprite: 11
+    fireSound: 48
+    explosionHitSound: 19
+    hitAnimation: 0
+    power: 300
+    damageAlter:
+      ToStun: 0
+      ToMorale: 400.0
+      ToHealth: 0
+      RandomWound: false
+      ToWound: 0.15
+      FireThreshold: 10000
+      SmokeThreshold: 10000
+    damageType: 8
     costThrow:
-      energy: 16
-    battleType: 1
-    twoHanded: true
-    invWidth: 1
-    invHeight: 3
-    attraction: 20
-    listOrder: 21126
-  - type: STR_RPK_CLIP
-    nameAsAmmo: (FMJ)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_MACHINE_GUNS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_RPK_BUY
-    size: 0.1
-    costBuy: 250
-    costSell: 120
-    weight: 4
-    bigSprite: 571
-    floorSprite: 2
-    hitSound: 22
-    hitAnimation: 26
-    power: 30
-    damageAlter:
-      ArmorEffectiveness: 0.9
-    damageType: 1
-    clipSize: 40
-    battleType: 2
-    invHeight: 1
+      energy: 20
+    costUnprime:
+      time: 15
+    unprimeActionName: STR_UNPRIME_BOMB
+    unprimeActionMessage: STR_BOMB_IS_DEACTIVATED
+    battleType: 4
+    twoHanded: false
+    spawnUnit: "STR_NANITE_GOO" #Metalloid Goo Spawner comes here
+    spawnUnitFaction: 1
     invWidth: 2
-    attraction: 15
-    listOrder: 21129
-  - type: STR_RPK_CLIP_AP
-    nameAsAmmo: (AP)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_MACHINE_GUNS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_RPK_CLIP_AP_BUY
-    size: 0.1
-    costBuy: 350
-    costSell: 250
-    weight: 4
-    bigSprite: 573
-    floorSprite: 2
-    hitSound: 22
-    hitAnimation: 26
-    power: 30
-    damageAlter:
-      ArmorEffectiveness: 0.85
-    damageType: 1
-    clipSize: 40
-    battleType: 2
-    invHeight: 1
-    invWidth: 2
-    attraction: 15
-    listOrder: 21129
-  - type: STR_RPK_DRUM
-    nameAsAmmo: (FMJ)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_RPK_DRUM_BUY
-    size: 0.1
-    costBuy: 400
-    costSell: 190
-    weight: 5
-    bigSprite: 572
-    floorSprite: 2
-    hitSound: 22
-    hitAnimation: 26
-    power: 30
-    damageAlter:
-      ArmorEffectiveness: 0.9
-    damageType: 1
-    clipSize: 75
-    battleType: 2
-    invHeight: 1
-    invWidth: 2
-    reloadSound: 224
-    attraction: 15
-    listOrder: 21129
-  - type: STR_RPK_DRUM_AP
-    nameAsAmmo: (AP)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_RPK_DRUM_AP_BUY
-    size: 0.1
-    costBuy: 700
-    costSell: 300
-    weight: 5
-    bigSprite: 574
-    floorSprite: 2
-    hitSound: 22
-    hitAnimation: 26
-    power: 30
-    damageAlter:
-      ArmorEffectiveness: 0.85
-    damageType: 1
-    clipSize: 75
-    reloadSound: 224
-    battleType: 2
-    invHeight: 1
-    invWidth: 2
-    attraction: 15
-    listOrder: 21129
-  - type: STR_GALIL_ARM
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_LAND]
-    requiresBuy:
-      - STR_GALIL_ARM_BUY
+    invHeight: 2
+    blastRadius: 25
+    attraction: 6
+    armor: 255
+    listOrder: 39200
+  - type: STR_NANORIFLE
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_SPACE, STR_LAND]
     size: 0.2
-    costBuy: 2600
-    costSell: 1600
-    weight: 11
+    costBuy: 75000
+    costSell: 60000
+    weight: 20
     bigSprite: 565
-    floorSprite: 442
+    floorSprite: 450
     handSprite: 2728
     bulletSprite: 2
-    fireSound: [215, 216]
-    reloadSound: 171
+    fireSound: 0
     compatibleAmmo:
-      - STR_RIFLE_M16_CLIP
-      - STR_GALIL_ARM_CLIP
-      - STR_GALIL_ARM_BIG_CLIP
-      - STR_RIFLE_M16_CLIP_AP
-      - STR_GALIL_ARM_CLIP_AP
-      - STR_GALIL_ARM_BIG_CLIP_AP
-    accuracyCloseQuarters: 85
-    accuracyAuto: 30
-    accuracySnap: 60
-    accuracyAimed: 90
-    tuAuto: 45
-    tuSnap: 34
-    tuAimed: 70
-    snapRange: 17
+      - STR_NANORIFLE_CLIP
+    accuracyCloseQuarters: 100
+    accuracyAuto: 40
+    accuracySnap: 65
+    accuracyAimed: 95
+    tuAuto: 33
+    tuSnap: 26
+    tuAimed: 60
     costThrow:
       energy: 20
     battleType: 1
     twoHanded: true
-    oneHandedPenalty: 40
     invWidth: 1
     invHeight: 3
-    autoRange: 12
-    kneelBonus: 125
-    confSnap:
-      shots: 3
-    autoShots: 6
-    sprayWaypoints: 2
-    armor: 30
+    snapRange: 17
+    autoRange: 11
+    shotgunChoke: 100
     attraction: 20
-    listOrder: 21245
-  - type: STR_GALIL_ARM_CLIP
-    nameAsAmmo: (FMJ)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_GALIL_ARM_BUY
-    size: 0.05
-    costBuy: 300
-    costSell: 190
-    weight: 4
-    bigSprite: 567
-    floorSprite: 2
-    hitSound: 22
-    hitAnimation: 26
-    power: 26
-    damageAlter:
-      ArmorEffectiveness: 0.85
-    damageType: 1
-    clipSize: 50
-    costThrow:
-      energy: 6
-    battleType: 2
-    invHeight: 2
-    invWidth: 1
-    armor: 30
-    attraction: 15
-    listOrder: 21210
-  - type: STR_GALIL_ARM_CLIP_AP
-    nameAsAmmo: (AP)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_GALIL_ARM_CLIP_AP_BUY
-    size: 0.05
-    costBuy: 450
-    costSell: 250
-    weight: 4
-    bigSprite: 569
-    floorSprite: 2
-    hitSound: 22
-    hitAnimation: 26
-    power: 26
-    damageAlter:
-      ArmorEffectiveness: 0.7
-    damageType: 1
-    clipSize: 50
-    costThrow:
-      energy: 6
-    battleType: 2
-    invHeight: 2
-    invWidth: 1
-    armor: 30
-    attraction: 15
-    listOrder: 21211
-  - type: STR_GALIL_ARM_BIG_CLIP
-    nameAsAmmo: (FMJ)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_GALIL_ARM_BIG_CLIP_BUY
-    size: 0.05
-    costBuy: 600
-    costSell: 300
+    listOrder: 21500
+  - type: STR_NANORIFLE_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 0.1
+    costBuy: 5000
+    costSell: 4000
     weight: 5
-    bigSprite: 568
-    floorSprite: 2
-    hitSound: 22
+    bigSprite: 566
+    floorSprite: 451
+    handSprite: 0
     hitAnimation: 26
-    power: 26
-    damageAlter:
-      ArmorEffectiveness: 0.85
-    damageType: 1
-    clipSize: 65
-    costThrow:
-    costThrow:
-      energy: 6
-    battleType: 2
-    invHeight: 2
-    invWidth: 1
-    reloadSound: 217
-    armor: 30
-    attraction: 15
-    listOrder: 21210
-  - type: STR_GALIL_ARM_BIG_CLIP_AP
-    nameAsAmmo: (AP)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_GALIL_ARM_BIG_CLIP_AP_BUY
-    size: 0.05
-    costBuy: 750
-    costSell: 380
-    weight: 5
-    bigSprite: 570
-    floorSprite: 2
     hitSound: 22
-    hitAnimation: 26
-    power: 26
-    damageAlter:
-      ArmorEffectiveness: 0.7
-    damageType: 1
-    clipSize: 65
     costThrow:
-      energy: 6
+      energy: 10
+    power: 50
+    damageBonus:
+      firing: 0.1
+    damageAlter:
+      ToStun: 0
+      ToMorale: 400.0
+      ToHealth: 0
+      RandomWound: false
+      ToWound: 0.15
+      FireThreshold: 10000
+      SmokeThreshold: 10000
+    damageType: 8
+    clipSize: 32
     battleType: 2
-    invHeight: 2
-    invWidth: 1
-    reloadSound: 217
-    armor: 30
+    invWidth: 2
+    invHeight: 1
     attraction: 15
-    listOrder: 21211
+    listOrder: 21510
   - type: STR_GIANT_RAT_WEAPON
     power: 4
     damageBonus:
@@ -388,7 +198,7 @@ items:
     floorSprite: 2
     handSprite: 0
     hitSound: 22
-    fireSound: [202, 203, 204, 205]
+    fireSound: [191,192,193,194,195,196]
     hitAnimation: 26
     power: 36
     damageBonus:
@@ -1500,6 +1310,7 @@ items:
       - STR_NAPALM_ROCKET
       - STR_EMP_ROCKET
       - STR_TRACITE_ROCKET
+      - STR_ANTI_E115_ROCKET
     accuracyCloseQuarters: 33
     accuracySnap: 55
     accuracyAimed: 115
@@ -1555,10 +1366,9 @@ items:
     requiresBuy:
       - STR_MAGMA_LAUNCHER_BUY
       - STR_MAGMA_GAS_AMMO_BUY
-    monthlyBuyLimit: 6
     size: 0.2
-    costBuy: 15000
-    costSell: 5000
+    costBuy: 9000
+    costSell: 4300
     weight: 9
     bigSprite: 446
     floorSprite: 422
@@ -1571,6 +1381,37 @@ items:
       RandomType: 4
       FixRadius: 8
       ToHealth: 1.25
+      ToStun: 0.8
+      ToEnergy: 4.0
+      ToMorale: 3.0
+      RandomStun: false
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    armor: 28
+    attraction: 16
+    listOrder: 34000
+  - type: STR_ANTI_E115_ROCKET
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CHEMICALS, STR_CLIPS, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_MAGMA_LAUNCHER_BUY
+      - STR_MAGMA_GAS_AMMO_BUY
+    size: 0.2
+    costBuy: 9000
+    costSell: 4300
+    weight: 9
+    bigSprite: 446
+    floorSprite: 422
+    handSprite: 0
+    explosionHitSound: 118
+    hitAnimation: 192
+    power: 90
+    damageType: 14
+    damageAlter:
+      RandomType: 7
+      FixRadius: 8
+      ToHealth: 1
       ToStun: 0.8
       ToEnergy: 4.0
       ToMorale: 3.0
@@ -1616,7 +1457,6 @@ items:
     requiresBuy:
       - STR_MAGMA_LAUNCHER_BUY
       - STR_SHARE_TRACITE_TECH
-    monthlyBuyLimit: 6
     size: 0.2
     costBuy: 25000
     costSell: 15000
@@ -1672,7 +1512,6 @@ items:
       ToTile: 0
       ToItem: 0
       ToWound: 0
-      FixRadius: 8 #check this !
     clipSize: 1
     battleType: 2
     invWidth: 1
@@ -1696,15 +1535,10 @@ items:
       ToArmorPre: 0.3
       ToTile: 0.66
   - type: STR_VAR_TRACITE_CLIP
-    requiresBuy:
-      - STR_VAR_CANNON
-      - STR_SHARE_TRACITE_TECH
-    monthlyBuyLimit: 6      
     nameAsAmmo: (TRACITE)
     categories: [STR_XCOM_TECH, STR_FIREARMS, STR_CANNONS, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     size: 0.2
-    costBuy: 16000
-    costSell: 8000
+    costSell: 80000
     weight: 8
     bigSprite: 442
     floorSprite: 418
@@ -2418,7 +2252,7 @@ items:
     damageAlter:
       ArmorEffectiveness: 0.85
     damageType: 1
-    clipSize: 15
+    clipSize: 20
     battleType: 2
     armor: 20
     attraction: 15
@@ -2521,8 +2355,6 @@ items:
   - type: STR_GROZA
     compatibleAmmo: !add
       - STR_WP_7_62_CLIP_AP
-      - STR_RPK_CLIP
-      - STR_RPK_CLIP_AP
     accuracyAuto: 45 #35
     accuracySnap: 65
     accuracyAimed: 95 #105
@@ -2560,8 +2392,6 @@ items:
     costSell: 800 #1550
     compatibleAmmo: !add
       - STR_WP_7_62_CLIP_AP
-      - STR_RPK_CLIP
-      - STR_RPK_CLIP_AP
     accuracyAuto: 42 #30
     accuracySnap: 65 #60
     accuracyAimed: 105 #100
@@ -2576,8 +2406,6 @@ items:
     costSell: 1000 #1550
     compatibleAmmo: !add
       - STR_WP_7_62_CLIP_AP
-      - STR_RPK_CLIP
-      - STR_RPK_CLIP_AP
     accuracyAuto: 45 #35
     accuracySnap: 70 #65
     accuracyAimed: 110 #105
@@ -2736,6 +2564,8 @@ items:
     armor: 30
     attraction: 15
     listOrder: 21211
+  - type: STR_RIFLE_M16_CLIP
+    nameAsAmmo: (FMJ)
   - type: STR_HUNTING_RIFLE
     bigSprite: 505
   - type: STR_PUMP_ACTION
@@ -2908,7 +2738,6 @@ items:
       #name: STR_BURST_AUTO
       shots: 3
   - type: STR_RIFLE_M16_CLIP
-    nameAsAmmo: (FMJ)
     costBuy: 200
     costSell: 150
     power: 26
@@ -3513,7 +3342,6 @@ items:
       - STR_STURMPISTOLE_BUY
       - STR_EXPLOSIVES_LICENCE
       - STR_MAGMA_GAS_AMMO_BUY
-    monthlyBuyLimit: 6
     categories: [STR_HUMAN_TECH, STR_CHEMICALS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
     size: 0.1
     costBuy: 5000
@@ -3842,14 +3670,9 @@ items:
     attraction: 20
     listOrder: 34511
   - type: STR_TRACITETHROWER_CLIP
-    requiresBuy:
-      - STR_TRACITETHROWER
-      - STR_SHARE_TRACITE_TECH
-    monthlyBuyLimit: 6      
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     size: 0.2
-    costBuy: 15000
-    costSell: 9000
+    costSell: 1000
     weight: 6
     bigSprite: 361
     floorSprite: 365
@@ -4176,14 +3999,9 @@ items:
     powerRangeThreshold: 16
     powerRangeReduction: 2
   - type: STR_ALLOY_SHOTGUN_TRACITE_SHARDS
-    requiresBuy:
-      - STR_ALLOY_SHOTGUN
-      - STR_SHARE_TRACITE_TECH
     nameAsAmmo: (TRACITE)
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
     size: 0.01
-    monthlyBuyLimit: 6
-    costBuy: 45000
     costSell: 21000 #check manufacture
     weight: 4
     bigSprite: 210
@@ -5069,7 +4887,7 @@ items:
     bigSprite: 348
     floorSprite: 323
     hitSound: 54 #check if this works
-    hitAnimation: 296
+    hitAnimation: 96
     explosionHitSound: 54
     blastRadius: 1
     power: 66
@@ -5090,7 +4908,6 @@ items:
       RadiusReduction: 33
       FireThreshold: 33
       ToTile: 0.0
-      FixRadius: 2
     clipSize: 3 #check if this is too op
     battleType: 2
     armor: 20
@@ -5135,7 +4952,7 @@ items:
     bigSprite: 254
     floorSprite: 325
     hitSound: 54 #check if thsi works
-    hitAnimation: 431
+    hitAnimation: 401
     invWidth: 2
     invHeight: 2
     blastRadius: 0
@@ -5167,8 +4984,8 @@ items:
     bigSprite: 347
     floorSprite: 325
     hitSound: 54 #check if thsi works
-    hitAnimation: 296
-    explosionHitSound: 54 #change this?
+    hitAnimation: 96
+    explosionHitSound: 54
     invWidth: 2
     invHeight: 2
     blastRadius: 2
@@ -5189,7 +5006,6 @@ items:
       ArmorEffectiveness: 0.5
       RadiusReduction: 45
       FireThreshold: 45
-      FixRadius: 3
       ToTile: 0.0
     clipSize: 3 #check if this isnt too op
     battleType: 2
@@ -5748,12 +5564,13 @@ items:
     costSell: 8000
     transferTime: 48
     weight: 25
-    bigSprite: 515
+    bigSprite: 261
     floorSprite: 12
     hitSound: 54 #check if thsi works
-    hitAnimation: 296
+    hitAnimation: 96
     explosionHitSound: 54
     damageType: 2
+    blastRadius: 0
     power: 86
     damageAlter:
       ResistType: 11
@@ -5770,7 +5587,6 @@ items:
       ArmorEffectiveness: 0.5
       RadiusReduction: 45
       FireThreshold: 45
-      FixRadius: 4
       ToTile: 0.0
     clipSize: 5 #check if this is OP
     battleType: 2
@@ -6075,13 +5891,9 @@ items:
   - type: STR_RPG_AT_ROCKET
     listOrder: 33851
   - type: STR_PROXIMITY_TRACITE_FLARE
-    requiresBuy:
-      - STR_SHARE_TRACITE_TECH                
-    monthlyBuyLimit: 15                              
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_FLARE, STR_SPORTS, STR_BEACH, STR_SPACE, STR_LAND]
     size: 0.1
-    costBuy: 1500
-    costSell: 500
+    costSell: 200
     weight: 4
     bigSprite: 256
     floorSprite: 326
@@ -6317,7 +6129,6 @@ items:
       - STR_EXPLOSIVES_LICENCE
       - STR_LIGHT_HAND_CANNON_BUY
       - STR_SHARE_ELERIUM_EXPLOSIVES_TECH
-    monthlyBuyLimit: 8
     size: 0.1
     costBuy: 22000
     costSell: 15000
@@ -6348,7 +6159,6 @@ items:
       - STR_LHC_I_AMMO
       - STR_LIGHT_HAND_CANNON_BUY
       - STR_SHARE_TRACITE_TECH
-    monthlyBuyLimit: 8
     size: 0.1
     costBuy: 15000
     costSell: 10000
@@ -6383,7 +6193,6 @@ items:
       - STR_LHC_AA_AMMO
       - STR_EXPLOSIVES_LICENCE
       - STR_LIGHT_HAND_CANNON_BUY
-    monthlyBuyLimit: 8
     size: 0.1
     costBuy: 7000
     costSell: 3000
@@ -6409,7 +6218,6 @@ items:
     requiresBuy:
       - STR_LHC_BS_AA_AMMO
       - STR_LIGHT_HAND_CANNON_BUY
-    monthlyBuyLimit: 8
     size: 0.1
     costBuy: 6500
     costSell: 3000
@@ -6487,7 +6295,6 @@ items:
       - STR_EXPLOSIVES_LICENCE
       - STR_LIGHT_CANNON_BUY
       - STR_SHARE_ELERIUM_EXPLOSIVES_TECH
-    monthlyBuyLimit: 6
     size: 0.1
     costBuy: 25000
     costSell: 16000
@@ -6518,7 +6325,6 @@ items:
       - STR_LC_I_AMMO
       - STR_LIGHT_CANNON_BUY
       - STR_SHARE_TRACITE_TECH
-    monthlyBuyLimit: 6
     size: 0.1
     costBuy: 18000
     costSell: 11000
@@ -6554,7 +6360,6 @@ items:
       - STR_HEAVY_CANNON_BUY
       - STR_EXPLOSIVES_LICENCE
       - STR_SHARE_ELERIUM_EXPLOSIVES_TECH
-    monthlyBuyLimit: 6
     size: 0.1
     costBuy: 30000
     costSell: 20000
@@ -6586,7 +6391,6 @@ items:
       - STR_HC_I_AMMO
       - STR_EXPLOSIVES_LICENCE
       - STR_SHARE_TRACITE_TECH
-    monthlyBuyLimit: 6
     size: 0.1
     costBuy: 22000
     costSell: 14000
@@ -6621,7 +6425,6 @@ items:
       - STR_AUTO_CANNON_BUY
       - STR_EXPLOSIVES_LICENCE
       - STR_SHARE_ELERIUM_EXPLOSIVES_TECH
-    monthlyBuyLimit: 6
     size: 0.1
     costBuy: 35000
     costSell: 24000
@@ -6652,7 +6455,6 @@ items:
       - STR_AUTO_CANNON_BUY
       - STR_EXPLOSIVES_LICENCE
       - STR_SHARE_TRACITE_TECH
-    monthlyBuyLimit: 6
     size: 0.1
     costBuy: 26000
     costSell: 16000
@@ -7025,7 +6827,6 @@ items:
     requiresBuy:
       - STR_MINI_MORTAR_BUY
       - STR_MAGMA_GAS_AMMO_BUY
-    monthlyBuyLimit: 8
     nameAsAmmo: (GAS)
     costBuy: 9000
     costSell: 400
@@ -7063,7 +6864,6 @@ items:
     requiresBuy:
       - STR_MINI_MORTAR_BUY
       - STR_MAGMA_GAS_AMMO_BUY
-    monthlyBuyLimit: 6
     nameAsAmmo: (GAS)
     costBuy: 29000
     costSell: 1600
@@ -7409,7 +7209,6 @@ items:
     requiresBuy:
       - STR_MORTAR_BUY
       - STR_MAGMA_GAS_AMMO_BUY
-    monthlyBuyLimit: 6
     costBuy: 16000
     costSell: 1600
     nameAsAmmo: (GAS)
@@ -8865,7 +8664,6 @@ items:
     categories: [STR_HUMAN_TECH, STR_OUTFITS]
     requiresBuy:
       - STR_HEAVY_RIOT_SUIT_BUY
-    monthlyBuyLimit: 6
     size: 1.0
     costBuy: 40000
     costSell: 20000
@@ -8911,7 +8709,7 @@ items:
     invHeight: 3
     battleType: 11
     armor: 60
-    recover: true
+    recover: false
   - type: STR_RIOT_VEST_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -8942,11 +8740,6 @@ items:
     costBuy: 8000
     costSell: 5000
     listOrder: 16731
-  - type: STR_BLACKOPS_NIGHTVISION
-    categories: [STR_HUMAN_TECH, STR_OUTFITS]
-    size: 1.0
-    costSell: 7000
-    listOrder: 16732
   - type: STR_NIGHT_JUMPSUIT
     categories: [STR_HUMAN_TECH, STR_OUTFITS]
     size: 0.9
@@ -9542,12 +9335,8 @@ items:
     isExplodingInHands: true
     listOrder: 38110
   - type: STR_TRACITE_CHARGE
-    requiresBuy:
-      - STR_BREACHING_CHARGE_BUY
-      - STR_SHARE_TRACITE_TECH      
     categories: [STR_HUMAN_TECH, STR_BREACHING_TOOLS ,STR_LAND STR_SPACE]
     size: 0.2
-    costBuy: 1500
     costSell: 300
     weight: 8
     bigSprite: 266
@@ -9729,6 +9518,45 @@ items:
     invWidth: 2
     invHeight: 2
     listOrder: 38603
+  - type: STR_CHRYSSALID_BEGONE #dont get too excited, most likely to be used for a scripted mission
+    size: 0.2
+    costSell: 300
+    weight: 20
+    bigSprite: 266
+    floorSprite: 327
+    handSprite: 249
+    hitSound: 80 #change this to explosion?
+    hitAnimation: 216
+    power: 600
+    explosionHitSound: 80
+    damageType: 3
+    damageAlter:
+      ResistType: 5
+      IgnoreOverKill: true
+      FireBlastCalc: false
+      ToTile: 1
+      ToItem: 1
+      RandomTile: true
+      FireThreshold: 250
+      SmokeThreshold: 400
+      RadiusReduction: 50
+      FixRadius: 20
+    fuseType: 1
+    costThrow:
+      energy: 17
+    costPrime:
+      time: 50
+    costUnprime:
+      time: 35
+    unprimeActionName: STR_UNPRIME_DOOMSDAY
+    battleType: 4
+    invWidth: 2
+    invHeight: 2
+    attraction: 18
+    recover: false
+    blastRadius: 25
+    listOrder: 38111
+    isExplodingInHands: true 
   - type: STR_DOOMSDAY #dont get too excited, most likely to be used for a scripted mission
     size: 0.2
     costSell: 300
@@ -9906,7 +9734,6 @@ items:
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
     requiresBuy:
       - STR_MAGMA_PULSE_SNIPER_RIFLE_AA_CLIP
-    monthlyBuyLimit: 6
     size: 0.1
     costBuy: 78000
     costSell: 46000
@@ -10318,12 +10145,12 @@ items:
     floorSprite: 335
     hitSound: 22
     hitAnimation: 411
-    power: 56
+    power: 55
     damageBonus:
       firing: 0.3 #0.18
     damageAlter:
       RandomType: 7
-      ArmorEffectiveness: 0.60
+      ArmorEffectiveness: 0.65
     damageType: 1
     clipSize: 1
     battleType: 2
@@ -10345,14 +10172,14 @@ items:
     floorSprite: 335
     hitSound: 22
     hitAnimation: 411
-    power: 56
+    power: 55
     damageBonus:
       firing: 0.3 #0.18
     damageAlter:
       RandomType: 7
-      ArmorEffectiveness: 0.60
+      ArmorEffectiveness: 0.65
     damageType: 1
-    clipSize: 5
+    clipSize: 3
     battleType: 2
     armor: 20
     attraction: 15
@@ -10374,7 +10201,7 @@ items:
     floorSprite: 335
     explosionHitSound: 146  #check if i dont need a stronger variant, the LWP explosion perhaps?
     hitAnimation: 0
-    power: 61
+    power: 60
     damageBonus:
       firing: 0.2
     damageAlter:
@@ -10406,7 +10233,7 @@ items:
     floorSprite: 335
     explosionHitSound: 146  #check if i dont need a stronger variant, the LWP explosion perhaps?
     hitAnimation: 0
-    power: 61
+    power: 60
     damageBonus:
       firing: 0.2
     damageAlter:
@@ -10417,7 +10244,7 @@ items:
       RadiusReduction: 20
     blastRadius: 2
     damageType: 3
-    clipSize: 5
+    clipSize: 3
     battleType: 2
     armor: 20
     invWidth: 2
@@ -10477,12 +10304,12 @@ items:
     floorSprite: 335
     hitSound: 22
     hitAnimation: 411
-    power: 62
+    power: 60
     damageBonus:
       firing: 0.3
     damageAlter:
       RandomType: 7
-      ArmorEffectiveness: 0.50
+      ArmorEffectiveness: 0.60
     damageType: 1
     clipSize: 1
     battleType: 2
@@ -10504,14 +10331,14 @@ items:
     floorSprite: 335
     hitSound: 22
     hitAnimation: 411
-    power: 62
+    power: 60
     damageBonus:
       firing: 0.3
     damageAlter:
       RandomType: 7
-      ArmorEffectiveness: 0.50
+      ArmorEffectiveness: 0.60
     damageType: 1
-    clipSize: 4
+    clipSize: 3
     battleType: 2
     armor: 20
     attraction: 15
@@ -10533,7 +10360,7 @@ items:
     floorSprite: 335
     explosionHitSound: 146  #check if i dont need a stronger variant, the LWP explosion perhaps?
     hitAnimation: 0
-    power: 67
+    power: 65
     damageBonus:
       firing: 0.2
     damageAlter:
@@ -10565,7 +10392,7 @@ items:
     floorSprite: 335
     explosionHitSound: 146  #check if i dont need a stronger variant, the LWP explosion perhaps?
     hitAnimation: 0
-    power: 67
+    power: 65
     damageBonus:
       firing: 0.2
     damageAlter:
@@ -10576,7 +10403,7 @@ items:
       RadiusReduction: 24
     blastRadius: 3
     damageType: 3
-    clipSize: 4
+    clipSize: 3
     battleType: 2
     armor: 20
     invWidth: 2
@@ -11460,10 +11287,9 @@ items:
     requiresBuy:
       - STR_TACTICAL_GRENADE_LAUNCHER_BUY
       - STR_MAGMA_EMP_AMMO_BUY
-    monthlyBuyLimit: 6
     size: 0.2
     costBuy: 15000
-    costSell: 6000
+    costSell: 700
     weight: 8
     bigSprite: 469 #fix these!
     floorSprite: 2
@@ -11552,7 +11378,7 @@ items:
     listOrder: 34191 #check this
   - type: STR_BLACKOPS_SMART_LAUNCHER_NAPALM_CLIP
     nameAsAmmo: (NAPALM)
-    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     size: 0.1
     requiresBuy:
       - STR_BLACKOPS_SMART_LAUNCHER_BUY
@@ -11619,7 +11445,7 @@ items:
     listOrder: 34191 #check this
   - type: STR_BLACKOPS_SMART_LAUNCHER_SMOKE_CLIP
     nameAsAmmo: (SMOKE)
-    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_SMOKE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_SMOKE STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     size: 0.1
     requiresBuy:
       - STR_BLACKOPS_SMART_LAUNCHER_BUY
@@ -11687,7 +11513,7 @@ items:
     listOrder: 34191 #check this
   - type: STR_BLACKOPS_SMART_LAUNCHER_TEARGAS_CLIP
     nameAsAmmo: (CS)
-    categories: [STR_HUMAN_TECH, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_INCAPACITATE STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     size: 0.1
     requiresBuy:
       - STR_BLACKOPS_SMART_LAUNCHER_BUY
@@ -11736,9 +11562,8 @@ items:
     requiresBuy:
       - STR_BLACKOPS_SMART_LAUNCHER_BUY
       - STR_MAGMA_GAS_AMMO_BUY
-    monthlyBuyLimit: 6
     costBuy: 18000
-    costSell: 5000
+    costSell: 900
     weight: 8
     bigSprite: 475 #get a new sprite soon please
     floorSprite: 329
@@ -13389,7 +13214,6 @@ items:
     liveAlien: true
     prisonType: 1
     recover: true
-    recoveryPoints: 100                       
     costSell: 50000
     listOrder: 158100
   - type: STR_BOUND_HANDS

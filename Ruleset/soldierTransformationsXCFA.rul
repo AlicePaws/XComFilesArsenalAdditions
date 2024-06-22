@@ -101,11 +101,6 @@ soldierTransformation:
     allowsLiveSoldiers: true
     allowedSoldierTypes:
       - STR_SOLDIER
-      - STR_PROTEAN
-      - STR_OLYMPIAN
-      - STR_KYBEROS
-      - STR_INFERNAL
-      - STR_SPARTAN
       - STR_HYBRID
     forbiddenPreviousTransformations:
       - STR_LAW_ENFORCEMENT_TRAINING

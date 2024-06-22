@@ -797,7 +797,9 @@ missionScripts:
     missionWeights:
       0:
         STR_LARGE_GROUND_CONVOY_BLACK_LOTUS: 100
-    regionWeights: *BlackLotusRegions
+    regionWeights:
+      0:
+        REGION_BLACK_LOTUS_CONVOYS_LARGE: 100
     useTable: false
     researchTriggers:
       STR_BLACK_LOTUS_CONVOY_LARGE: true
